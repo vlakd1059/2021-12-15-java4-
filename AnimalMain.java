@@ -1,0 +1,21 @@
+package Exam01;
+
+public class AnimalMain {
+
+	public static void main(String[] args) {
+		Animal ani = new Animal();
+		System.out.println("¹ßÅé °¹¼ö : " + ani.claw);
+		System.out.println("²¿¸® ±æÀÌ : " + ani.tailsize);
+		System.out.println("¹«´Ì : " + ani.pattern);
+		System.out.println("ÀÌ»¡ °¹¼ö : " + ani.teeth);
+
+		Dog dog = new Dog();
+		dog.pattern = "ÁÙ¹«´Ì";
+
+		Animal ani2 = dog;
+		ani2.pattern = "º°¸ð¾ç";
+		System.out.println(dog.pattern);
+
+	}
+
+}
